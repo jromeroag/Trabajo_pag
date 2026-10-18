@@ -1,47 +1,89 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Descubre el Perú</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explora los mejores destinos turísticos del Perú.">
+  <title>Descubre Perú | Vive la aventura</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header class="navbar">
+    <a class="logo" href="#inicio">🇵🇪 Descubre<span>Perú</span></a>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#destinos">Destinos</a>
+      <a href="#nosotros">Nosotros</a>
+    </nav>
+    <a href="#destinos" class="nav-btn">Explorar Perú →</a>
+  </header>
 
-    <header>
-        <h1>Descubre el Perú</h1>
-        <p>Conoce las maravillas de nuestro país</p>
-    </header>
+  <section class="hero" id="inicio">
+    <div class="hero-content">
+      <span class="etiqueta">✦ TU PRÓXIMA AVENTURA COMIENZA AQUÍ</span>
+      <h1>Descubre la magia <br>del <em>Perú.</em></h1>
+      <p>Un país de historia milenaria, paisajes extraordinarios
+      y experiencias que recordarás para siempre.</p>
+      <a href="#destinos" class="btn">Explorar destinos ↗</a>
+    </div>
+    <div class="hero-bottom">📍 Machu Picchu, Cusco — Perú</div>
+  </section>
 
-    <main>
-        <section class="tarjeta">
+  <section class="intro" id="destinos">
+    <span class="subtitulo">EXPLORA LO EXTRAORDINARIO</span>
+    <h2>Destinos que te <em>enamorarán</em></h2>
+    <p>Desde las alturas de los Andes hasta las maravillas
+    de nuestra costa. Cada rincón tiene una historia.</p>
+  </section>
 
-            <img
-                src="https://images.unsplash.com/photo-1526392060635-9d6019884377?w=1200"
-                alt="Machu Picchu en Cusco"
-            >
+  <main class="grid-destinos">
+    <article class="tarjeta">
+      <img src="https://images.unsplash.com/photo-1526392060635-9d6019884377?w=900&q=85"
+           alt="Machu Picchu en Cusco" loading="lazy">
+      <div class="tarjeta-info">
+        <span>📍 CUSCO</span>
+        <h3>Machu Picchu</h3>
+        <p>Explora la ciudadela inca, una de las siete maravillas del mundo moderno.</p>
+        <a href="https://www.google.com/maps/search/?api=1&query=Machu+Picchu+Peru" target="_blank" rel="noopener noreferrer">Descubrir destino ↗</a>
+      </div>
+    </article>
 
-            <div class="contenido">
-                <h2>Machu Picchu - Cusco</h2>
+    <article class="tarjeta">
+      <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=900&q=85"
+           alt="Paisaje natural" loading="lazy">
+      <div class="tarjeta-info">
+        <span>📍 AREQUIPA</span>
+        <h3>Valle del Colca</h3>
+        <p>Admira los paisajes andinos y el majestuoso vuelo del cóndor.</p>
+        <a href="https://www.google.com/maps/search/?api=1&query=Valle+del+Colca+Peru" target="_blank" rel="noopener noreferrer">Descubrir destino ↗</a>
+      </div>
+    </article>
 
-                <p>
-                    Machu Picchu es uno de los destinos
-                    turísticos más importantes del Perú.
-                    Esta ciudadela inca destaca por su
-                    arquitectura, historia y paisajes.
-                </p>
+    <article class="tarjeta">
+      <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=900&q=85"
+           alt="Lago rodeado de montañas" loading="lazy">
+      <div class="tarjeta-info">
+        <span>📍 PUNO</span>
+        <h3>Lago Titicaca</h3>
+        <p>Conoce sus islas, tradiciones y la riqueza cultural del altiplano.</p>
+        <a href="https://www.google.com/maps/search/?api=1&query=Lago+Titicaca+Peru" target="_blank" rel="noopener noreferrer">Descubrir destino ↗</a>
+      </div>
+    </article>
+  </main>
 
-                <button onclick="alert('¡Bienvenido al Perú!')">
-                    Explorar destino
-                </button>
-            </div>
+  <section class="nosotros" id="nosotros">
+    <span class="subtitulo">NUESTRA ESENCIA</span>
+    <h2>Perú, un destino infinito.</h2>
+    <p>Descubre nuestra gastronomía, cultura, naturaleza e historia.
+    Cada viaje es una oportunidad para vivir algo único.</p>
+    <a href="#inicio" class="btn">Volver al inicio ↑</a>
+  </section>
 
-        </section>
-    </main>
-
-    <footer>
-        <p>Mi primera página web con Docker Compose</p>
-    </footer>
-
+  <footer>
+    <strong>🇵🇪 DescubrePerú</strong>
+    <p>Hecho con ❤️ para compartir las maravillas del Perú.</p>
+    <small>© 2026 Descubre Perú. Proyecto académico.</small>
+  </footer>
 </body>
 </html>
